@@ -1,0 +1,84 @@
+{
+  "environment": "dev",
+  "database": {
+    "host": "localhost",
+    "port": 6379
+  },
+  "cookie": {
+    "name": "localhost",
+    "maxAge": 86400000,
+    "secure": false,
+    "httpOnly": false,
+    "cookieDomain": "",
+    "cookiePath": "/",
+    "sessionPath": "/singleui",
+    "secretKey": "singleuisecret",
+    "key": "sdjshkgfkdnlskdjfngv123",
+    "proxy": "true",
+    "resave": false,
+    "rolling": true,
+    "saveUninitialized": false
+  },
+  "ldapDetails": {
+    "user": "cn=admin,dc=robomq,dc=io",
+    "pwd": "ldapDemo123$",
+    "server": "ldap://beta.robomq.io:389",
+    "base": "dc=robomq,dc=io",
+    "ldapTimeout":1000,
+    "ldapconnectTimeout":10000
+  },
+  "smtp":{
+    "server": "smtp.gmail.com",
+    "port": 587,
+    "login": "provisioning@robomq.io",
+    "password": "ChelseaMiami01@^",
+    "ssl": true,
+    "from": "provisioning@robomq.io",
+    "bcc" : ""
+  },
+  "amqpstats": {
+    "admin": "admin",
+    "vhost":"",
+    "username":"",
+    "password":"",
+    "host":"",
+    "ssl":true,
+    "heartbeat":60,
+    "exchange":"beta.registrations",
+    "routingkey":"beta.registrations",
+    "brokerURLwithCredentials":"https://admin:beta123!@beta.robomq.io:15671"
+  },
+  "Gmail": { 
+    "client_id": "815061926613-1cd32ev2392lgm15p1emajc09l9gh3ko.apps.googleusercontent.com",
+    "client_secret": "5mDzGBg0DQBHvFW15g_i-8AL",
+    "scope": ["email", "profile"]
+  },
+  "Outlook": {
+    "client_id": "9496ec6a-961e-40ec-864a-02bd6b0c4845",
+    "client_secret": "ngyvpiWV7410@$]gPHIRB5^",
+    "scope": ["openid", "profile", "offline_access", "https://graph.microsoft.com//Mail.Read"]
+  },
+  "Azure":{
+    "identityMetadata": "https://login.microsoftonline.com/common/v2.0/.well-known/openid-configuration",
+    "client_id": "72dc664d-b4b2-4651-b79e-15c9f9d6abe1",
+    "responseType": "code",
+    "responseMode": "query",
+    "client_secret": "Z]S$X::&r]B6]#_y:/@J^6J/_#*",
+    "scope":["profile","email","offline_access","https://graph.microsoft.com/mail.read"]
+  },
+  "siteurl":"http://localhost:4200/",
+  "secret":"3ed0a48fb235b56e8effa3e626f35b10c6af49f020d3718ca4104e9332dbf6575b25ee044b81ec113365112e6b5a1054",
+  "linkexpirationHours":24,
+  "frontProxy":"singleui/api/",
+  "logger_level":{
+    "error": 0,
+    "warn": 1,
+    "info": 2,
+    "verbose": 3,
+    "debug": 4,
+    "silly": 5
+  },
+  "restrictedDomains" : [],
+  "libeliumOperationsMail":"operations@robomq.io",
+  "sales_email":"sales@robomq.io"
+}

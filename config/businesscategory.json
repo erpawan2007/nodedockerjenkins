@@ -1,0 +1,15 @@
+{
+
+    "accountMapping":[
+        {
+            "robomq.io":"employee"
+        },
+        {
+            "sprint.com":"friendly"
+        },
+        {
+            "topgolf.com":"paid"
+        }
+    ]
+
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style type="text/css">
+        .instruction1 {
+            padding-top: 10px;
+            padding-right: 0px;
+            padding-left: 0px;
+            font-size: 20px
+        }
+
+        .instruction_point1 {
+            margin-top: -20px;
+            padding-right: 0px;
+            padding-bottom: 10px;
+            font-size: 15px
+        }
+
+        .instruction_point {
+            padding-top: 0px;
+            padding-right: 0px;
+            padding-left: 23px;
+            font-size: 15px
+        }
+
+        .pass-btn {
+            background-color: #535d66;
+            color: #fff;
+            overflow: hidden;
+            width: 110px;
+            padding-left: 8px;
+            padding-right: 9px;
+            height: 36px;
+            display: inline-block;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <app-root>
+        <p class="instruction_point1">Dear Meshlium Gateway Technician,</p>
+        <p class="instruction_point1">The following are a few steps that you will need to complete before you can
+            create a flow in Connect using your Meshlium Gateway.</p>
+        <ol class="instruction_point">
+            <li>On the Meshlium management UI dashboard on your Meshlium gateway, navigate to the RoboMQ Cloud
+                connector dashboard by following <i><u><b>Manager
+                            System </b></u></i>
+                > <i><u><b>Cloud Connector</b></u></i> > <i><u><b>Basic Cloud Partner</b></u></i> > <i><u><b>RoboMQ</b></u></i>.
+                There you will encounter this dashboard.</li>
+                <img src="<%=siteurl%>assets/img/libelium_img.png">
+            <li>Fill out the configuration window with your RoboMQ broker password that RoboMQ provided.
+                Further explanation of all of these configuration fields can be found in the RoboMQ Connector guide
+                that comes with your Meshlium.</li><br>
+            <ol type="a">
+                    <li><b>Host:</b> Should be “trial.robomq.io”.</li>
+                    <li><b>SSL:</b> Is SSL enabled for the Broker connection.</li>
+                    <li><b>Tenant:</b> The company you used signed up with.</li>
+                    <li><b>Username:</b> The email address you used to sign up with.</li>
+                    <li><b>Password:</b> The Password that was given to you by RoboMQ.</li>
+                    <li><b>Record Limit:</b> The number of records that is queried at every record query interval.</li>
+                    <li><b>Record Interval:</b> The number of seconds that will elapsed in between each record query.</li>
+            </ol>
+            <br>
+            <li>Click the grey Save button on the Meshlium dashboard.</li>
+            <li>Click the green Start button on the Meshlium dashboard.</li>
+        </ol>
+        <p class="instruction_point1">
+            If you have any problems with your setup feel free to contact RoboMQ at info@robomq.io.
+        </p>
+    </app-root>
+</body>
+
+</html>
